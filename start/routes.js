@@ -17,10 +17,11 @@ const Route = use('Route')
 
 Route.on('/').render('main')
 
-Route.get('/test', () => 'I am a test')
+// Route.get('/test', () => 'I am a test')
 
-Route.get('/test/:id', ({params}) => {
-  return `id # ${params.id}`})
+// Route.get('/test/:id', ({params}) => {
+//  return `id # ${params.id}`
+// })
 
 
 
