@@ -15,7 +15,7 @@
 
 const Route = use('Route')
 
-Route.on('/').render('main')
+Route.on('/').render('index')
 
 // Route.get('/test', () => 'I am a test')
 
