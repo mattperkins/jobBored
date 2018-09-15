@@ -6,6 +6,12 @@ or a list of skills you would like to learn
 # DEV
 ## adonis server --dev
 
+# DB
+```
+npm i pg
+```
+
+
 # CLI
 ## adonis make:view home // creates a .edge file
 
