@@ -21,7 +21,7 @@ SELECT * FROM jobs;
 ## adonis migration:run // add table/s to db
 ## adonis migration:rollback // remove tables
 ## adonis make:migration tableName
-
+## adonis make:model Job
 
 # Adonis fullstack application
 
