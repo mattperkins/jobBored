@@ -2,8 +2,12 @@
 
 const Route = use('Route')
 
-Route.on('/').render('index')
+Route.get('/', 'JobController.home')
 
+
+
+
+// Route.on('/').render('index')
 
 // Route.get('/test', () => 'I am a test')
 

@@ -11,6 +11,13 @@ class JobController {
       job.link = "http://dormshed.com"
       job.description = "Doing amazing stuff daily"
     await job.save()
+
+    // fetch a job
+    const jobs = await Job.all()
+
+    return view.render('index', { jobs: jobs.toJSON() })
+
+
   }
 }
 
