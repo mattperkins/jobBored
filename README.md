@@ -9,6 +9,10 @@ or a list of skills you would like to learn
 # DB
 ```
 npm i pg
+
+psql -h dumbo.db.elephantsql.com -p 5432 -U peuerqpi + pword at prompt
+\d 
+SELECT * FROM jobs;
 ```
 
 
