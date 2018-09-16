@@ -14,7 +14,7 @@ npm i pg
 
 # CLI
 ## adonis make:view home // creates a .edge file
-## adonis migration:run // seed db with tables
+## adonis migration:run // add table/s to db
 ## adonis migration:rollback // remove tables
 ## adonis make:migration tableName
 
