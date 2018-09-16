@@ -5,7 +5,7 @@ const Job = use('App/Models/Job')
 class JobController {
     async home({view}) {
      
-    // create a job
+    // create test render job data
     const job = new Job
       job.title = "Head of Awesome"
       job.link = "http://dormshed.com"
