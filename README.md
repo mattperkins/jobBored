@@ -15,13 +15,17 @@ psql -h dumbo.db.elephantsql.com -p 5432 -U peuerqpi + pword at prompt
 SELECT * FROM jobs;
 ```
 
-
 # CLI
 ## adonis make:view home // creates a .edge file
 ## adonis migration:run // add table/s to db
 ## adonis migration:rollback // remove tables
-## adonis make:migration tableName
+## adonis make:migration tableName (create table)
 ## adonis make:model Job
+## adonis make:controller JobController (for http requests)
+
+
+
+
 
 # Adonis fullstack application
 
