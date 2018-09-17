@@ -9,6 +9,14 @@ Route.post('/signup', 'UserController.create').validator('CreateUser')
 
 Route.on('/login').render('auth.login')
 
+Route.get('/logout', async({ auth, response }) => {
+  await auth.logout()
+  return response.redirect('/')
+})
+
+
+
+
 
 // Route.on('/').render('index')
 
