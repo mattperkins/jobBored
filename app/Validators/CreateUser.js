@@ -11,7 +11,7 @@ class CreateUser {
 
   get message (){
     return {
-      'required': '{{ field }} is required',
+      'required': 'This {{ field }} is required',
       'unique': 'This {{ field }} already exists'
     }
   }
