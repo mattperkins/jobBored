@@ -8,6 +8,19 @@ class CreateUser {
       'password': 'required'
     }
   }
+
+  get message (){
+    return {
+      'required': '{{ field }} is required',
+      'unique': 'This {{ field }} already exists'
+    }
+  }
+  async fails (error){
+  this.ctx.session.withErrors(error) 
+    .flashAll()
+
+  return this.ctx.response.redirect('back')
+  }
 }
 
 module.exports = CreateUser
