@@ -15,6 +15,14 @@ Route.get('/logout', async({ auth, response }) => {
   return response.redirect('/')
 })
 
+Route.get('/post-a-job', 'JobController.userIndex')
+Route.get('/post-a-job/delete/:id', 'JobController.delete')
+Route.get('/post-a-job/edit/:id', 'JobController.edit')
+Route.get('/post-a-job/update/:id', 'JobController.update').validator('CreateUser')
+
+
+
+
 
 
 
