@@ -37,7 +37,9 @@ nav ul li {
 }
 nav ul li a {
   padding: 2em;
+  margin-top: 1em;
   display: inline-block;
+  color: #f7f7f7;
 }
 nav ul li a:hover {
   background: #455668;
@@ -48,7 +50,7 @@ nav ul li a:hover {
   margin-top: 2em;
 }
 h1 {
-  margin-bottom: 1em;
+  margin: 1em;
   color: #f7f7f7;
 }
 .job-container, .job-container2 {

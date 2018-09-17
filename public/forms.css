@@ -1,15 +1,15 @@
 .job-container{
   grid-template-columns: auto;
   padding: 2em;
-  width: 30%;
+  width: 40%;
 }
 label{
   font-weight: bold;
 }
-input[type='text'], input[type='email'] input[type='password']{
-  width: calc(100% - 4em);
+input{
+  width: calc(100% - 2em);
   display: block;
-  padding: .5em;
+  padding: 1.2em;
   margin-bottom: 20px;
   border: 2px solid lightgray;  
 }
