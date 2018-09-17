@@ -2,19 +2,60 @@
 @layout('layout.main')
 
 @section('title')
-JobBored - Dream bigger
+JobBored - Login 
 @endsection
+
+
+@section('extracss')
+  {{ style('forms') }}
+@endsection
+
 
 @section('content')
 
-    @each(job in jobs)
-      <div class="job-container">
-        <div class="blank"></div>
-        <div class="job-info">
-          <h3><a href="{{job.link}}">{{job.title}}</a></h3>
-          <p>{{job.description}}</p>
-        </div>
-      </div>
-    @endeach
+
+    <div>
+
+     <div class="job-container"> 
+
+    @if(flashMessage('loginError'))
+      <span>{{ flashMessage('loginError') }}
+    @endif
+
+        <form action="{{ route('UserController.login') }}" method="POST">  
+
+          {{ csrfField() }}
+
+          <label for="email">Email</label> 
+          <input type="email" 
+            name="email" value="{{ old('email', '')}}"> 
+          @if(hasErrorFor('email'))
+            <span>{{ getErrorFor('email')}}</span>
+          @endif
+
+          <label for="password">Password</label> 
+          <input type="password" name="password"> 
+          @if(hasErrorFor('password'))
+            <span>{{ getErrorFor('password')}}</span>
+          @endif
+          
+          <button type="submit">Join now</button>
+
+        </form>
+    <div>
+
+    </div>
+
 
 @endsection
+
+
+
+
+
+
+
+
+
+
+
