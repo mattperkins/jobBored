@@ -28,7 +28,7 @@ SELECT * FROM jobs;
 ```
  '@adonisjs/validator/providers/ValidatorProvider'
 ```
-
+## adonis make:validator CreateUser
 
 # Adonis fullstack application
 
