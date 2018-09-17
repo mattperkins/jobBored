@@ -5,6 +5,7 @@ const Route = use('Route')
 Route.get('/', 'JobController.home')
 
 Route.on('/signup').render('auth.signup')
+Route.post('/signup', 'UserController.create').validate('CreateUser')
 Route.on('/login').render('auth.login')
 
 
