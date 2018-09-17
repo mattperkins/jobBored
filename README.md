@@ -23,8 +23,11 @@ SELECT * FROM jobs;
 ## adonis make:model Job
 ## adonis make:controller JobController (for http requests)
 
-
-
+## adonis install @adonisjs/validator
+### and then add the following to start/app.js:
+```
+ '@adonisjs/validator/providers/ValidatorProvider'
+```
 
 
 # Adonis fullstack application
