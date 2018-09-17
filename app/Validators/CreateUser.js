@@ -3,7 +3,9 @@
 class CreateUser {
   get rules () {
     return {
-      // validation rules
+      'username': 'required|unique:users',
+      'email': 'required|unique:users',
+      'password': 'required'
     }
   }
 }
