@@ -15,12 +15,13 @@ class CreateUser {
       'unique': 'This {{ field }} already exists'
     }
   }
-  async fails (error){
-  this.ctx.session.withErrors(error) 
-    .flashAll()
 
-  return this.ctx.response.redirect('back')
+  async fails (error){
+    this.ctx.session.withErrors(error) 
+      .flashAll()
+    return this.ctx.response.redirect('back')
   }
+
 }
 
 module.exports = CreateUser
