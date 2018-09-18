@@ -22,7 +22,7 @@ Route.get('/post-a-job', 'JobController.userIndex')
 Route.group(() => {
   Route.get('/delete/:id', 'JobController.delete')
   Route.get('/edit/:id', 'JobController.edit')
-  Route.post('/update/:id', 'JobController.update').validator('CreateUser')
+  Route.post('/update/:id', 'JobController.update').validator('CreateJob')
 }).prefix('/post-a-job')
 
 // Post a Job
