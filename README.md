@@ -1,7 +1,7 @@
-post a description of your current boring job
-post a description of the job you would like to be doing
-post a list of your skills 
-or a list of skills you would like to learn
+- post a description of your current boring job
+- post a description of the job you would like to be doing
+- post a list of your skills 
+- or a list of skills you would like to learn
 
 # DEV
 ## adonis server --dev
