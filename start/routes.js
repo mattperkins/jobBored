@@ -15,15 +15,18 @@ Route.get('/logout', async({ auth, response }) => {
   return response.redirect('/')
 })
 
+
+// Display all Jobs
 Route.get('/post-a-job', 'JobController.userIndex')
 
 Route.group(() => {
   Route.get('/delete/:id', 'JobController.delete')
   Route.get('/edit/:id', 'JobController.edit')
-  Route.post('/update/:id', 'JobController.update').validator('CreateJob')
+  Route.post('/update/:id', 'JobController.update').validator('CreateUser')
 }).prefix('/post-a-job')
 
-
+// Post a Job
+Route.post('/post-a-job', 'JobController.create').validator('CreateJob')
 
 
 
