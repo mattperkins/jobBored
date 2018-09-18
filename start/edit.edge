@@ -8,7 +8,26 @@ JobBored - Edit your Job
 {{ style('forms') }}
 @endsection
 
+@section('content')
 
+<div class="job-container">
+  @if(flashMessage('message'))
+    <span>{{ flashMessage('message') }}</span>  
+  @endif
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+@endsection
 
 
 
