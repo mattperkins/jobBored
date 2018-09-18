@@ -23,6 +23,12 @@ JobBored - Edit your Job
     <span>{{ getErrorFor('title') }}</span>
   @endif
 
+  <label for="link">Link URL</label>
+  <input type="text" name="link" value="{{ job.link }}">
+  @if(hasErrorFor('link'))
+    <span>{{ getErrorFor('link') }}</span>
+  @endif
+
 
 
 
