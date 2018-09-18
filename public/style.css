@@ -62,8 +62,8 @@ h1 {
   grid-template-columns: 120px auto;
 }
 .blank {
-  width: 100px;
-  height: 100px;
+  width: 1px;
+  height: 1px;
   border: 1px solid lightgray;
   border-radius: 5px;
 }

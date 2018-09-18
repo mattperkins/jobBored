@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layout.main')
 
 @section('title')
 JobBored - Post your job
@@ -21,20 +21,20 @@ JobBored - Post your job
       
       <label for="title">Job Title</label>
       <input type="text" name="title" value="{{ old('title', '') }}"> 
-        @if(hasError('title'))  
-          <span>{{ getErrors('title') }}</span>
+        @if(hasErrorFor('title'))  
+          <span>{{ getErrorFor('title') }}</span>
         @endif
       
      <label for="link">Link URL</label> 
      <input type="text" name="link" value="{{ old('link', '') }}">
-         @if(hasError('link'))  
-          <span>{{ getErrors('link') }}</span>
+         @if(hasErrorFor('link'))  
+          <span>{{ getErrorFor('link') }}</span>
         @endif
 
     <label for="link">Description</label> 
      <input type="text" name="description" value="{{ old('description', '') }}">
-         @if(hasError('description'))  
-          <span>{{ getErrors('description') }}</span>
+         @if(hasErrorFor('description'))  
+          <span>{{ getErrorFor('description') }}</span>
         @endif
 
       <button type="submit">Submit a Job</button> 
@@ -48,20 +48,20 @@ JobBored - Post your job
       <div class="blank"></div>
       <div class="job-info">
         <h3><a href="{{ job.link }}">{{ job.title }}</a></h3>
+        <p>{{ job.description }}</p>
+      <ul>
+          <li>
+<a href="{{ route('JobController.delete', { id: job.id }) }}">Delete</a></li>
+          <li>
+<a href="{{ route('JobController.edit', { id: job.id }) }}">Edit</a></li>
+      </ul> 
       </div>
     </div>
   @endeach
 
 
 
-
-
-
-
-
-
-
-
+@endsection
 
 
 
