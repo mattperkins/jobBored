@@ -12,7 +12,7 @@ class JobController {
   }
   
     async userIndex({ view, auth }) {
-
+      // fetch all user's jobs
       const jobs = await auth.user.jobs().fetch()
 
     return view.render('jobs', { jobs: jobs.toJSON() })
